@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Movement</title>
+    <link rel="stylesheet" href="ButtonMove.css">
+</head>
+<body>
+    <div id="navbar"></div>
+    <script>document.addEventListener('DOMContentLoaded', () => {
+     fetch('navBar.html')
+         .then(response => response.text())
+         .then(data => {
+             document.getElementById('navbar').innerHTML = data;
+         });
+ });</script>
+    <div class="controls">
+        <label for="colorSelect">Choose a color:</label>
+        <select id="colorSelect">
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+            <option value="yellow">Yellow</option>
+            <option value="white">White</option>
+        </select>
+        <button id="makeButton">Make Button</button>
+        <button id="moveToggle">MOVE</button>
+        <p>Total Sum: <span id="totalSum">0</span></p>
+    </div>
+
+    <div id="viewingArea"></div>
+
+    <script src="ButtonMove.js"></script>
+</body>
+</html>

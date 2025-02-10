@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: #333;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.controls {
+    margin: 20px;
+}
+
+#viewingArea {
+    width: 75vw;
+    height: 75vh;
+    background-color: black;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid white;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.movable-button {
+    position: absolute;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+}
